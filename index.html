@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Schere, Stein, Papier</title>
+</head>
+<body>
+	<div class="container">
+		<h1> Schere Stein Papier </h1>
+        <div class="runden">
+			<label for="runden">Anzahl der Runden:</label>
+			<select id="runden">
+				<option id="chekcmck" value="10">10</option>
+				<option id="chekcmck" value="15">15</option>
+				<option id="chekcmck" value="20">20</option>
+			</select>
+		</div>
+		<div class="scoreboard">
+			<p> Spieler: <span id="spieler-score">0</span></p>
+			<p> Computer: <span id="computer-score">0</span></p>
+		</div>
+		<div class="auswahl">
+			<button id="checkermecker" value="1" class="btn" name="stein" onclick="play('stein')"> Stein </button>
+			<button id="checkermecker" value="1" class="btn" name="papier" onclick="play('papier')"> Papier </button>
+			<button id="checkermecker" value="1" class="btn" name="schere" onclick="play('schere')"> Schere </button>
+		</div>
+		<div id="round-ergeniss"></div>
+		<div id="game-ergeniss"></div>
+		<button class="reset" onclick="reset()">Punkte zurücksetzen</button>
+	</div>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
